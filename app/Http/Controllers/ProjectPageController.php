@@ -13,6 +13,6 @@ class ProjectPageController extends Controller
         $projects = Project::with('category')
             ->get();
         $project_categories = ProjectCategory::all();
-        return view('/projects', compact('projects', 'project_categories'));
+        return view('/landingpage', compact('projects', 'project_categories'));
     }
 }
